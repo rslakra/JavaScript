@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<title>My Angular JS Example</title>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="../controllers/PhoneController.js"></script>
+</head>
+<body ng-controller="phoneController">
+	<!-- Phone List -->
+	<ul>
+		<li ng-repeat="phone in phones"><span>{{phone.name}}</span>
+			<p>{{phone.snippet}}</p>
+	</ul>
+</body>
+</html>

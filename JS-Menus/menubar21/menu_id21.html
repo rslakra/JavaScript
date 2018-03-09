@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+<TITLE>X-Browser Menubar - Heirarchial look - dZigns by Shiv Menu21</TITLE>
+<script language=javascript>
+<!--
+//	Written & created by Shivaji Basu
+//	Copyright www.shivbasu.com
+//	Use this script at your own risk
+//	For further info, contact info@shivbasu.com or webmaster@3rdmstudio.com
+//	To use his script, you MUST leave this disclaimer & credit as it is
+
+//	Sniffer Explanation
+//	document.layer for NS4
+//	document.getElementById for IE5 & NS6
+//	document.all && !(document.getElementById) for IE4
+
+function changein(id) {
+        if (document.layers) document.layers[id].visibility = "show"
+        else if (document.getElementById) document.getElementById(id).style.visibility = "visible"
+        else if (document.all && !(document.getElementById)) document.all(id).style.visibility = "visible"
+}
+
+function changeout(id) {
+        if (document.layers) document.layers[id].visibility = "hide"
+        else if (document.getElementById) document.getElementById(id).style.visibility = "hidden"
+        else if (document.all && !(document.getElementById)) document.all(id).style.visibility = "hidden"
+}
+
+function nothing(){
+}
+
+
+//-->
+
+</SCRIPT>
+
+<style>
+<!--
+a{text-decoration:none; color:#004000;font-family:times;text-transform:uppercase; font-size:12px;
+}
+a:hover{text-decoration:underline;
+}
+#button{position:absolute;left:10;top:40; z-index:101;
+}
+#buttonbg{position:absolute;left:10;top:80; color:#004000; font-family:times,arial; font-size:14px; z-index:5;
+}
+#lists1{position:absolute; top:120; left:10; text-align:center; width:135;  z-index:1;
+}
+#lists2{position:absolute; top:155; left:10; text-align:center; width:135; z-index:2;
+}
+#lists3{position:absolute; top:190; left:10; text-align:center; width:135; z-index:3;
+}
+#lists4{position:absolute; top:225; left:10; text-align:center; width:135; z-index:4;
+}
+#linkpage1{position:absolute; top:120; left:130;visibility:hidden; text-align:center; width:135; z-index:100;
+}
+#linkpage2{position:absolute; top:155; left:130;visibility:hidden; text-align:center; width:135; z-index:100;
+}
+#linkpage3{position:absolute;top:190; left:130;visibility:hidden; text-align:center; width:135;  z-index:100;
+}
+#linkpage4{position:absolute; top:225; left:130;visibility:hidden; text-align:center; width:135;  z-index:100;
+}
+-->
+</style>
+
+</HEAD>
+
+<BODY  bgcolor=#ffffcd  text=#004000 LINK="#400000" VLINK="#ff0000" ALINK="#ff0000" topmargin=0 marginheight=0 leftmargin=0 marginwidth=0>
+
+<table border=0 width=100% cellpadding=0 cellspacing=0 bgcolor=#ffbb00><tr><td align=right width=100%>
+<IMG SRC="../images/dbs_logo.gif" border=0 width=345 height=70 alt="dzigns by Shiv"></td><td align=right><img src="../images/dbs_rightspacer.gif" width="30" height="70" alt="Spacer" border="0"></td></tr></table>
+
+<table width=100% border=0 cellpadding=0 cellspacing=0><tr><td width=160 valign=top>
+<!-- This clear image is used only as a SPACER Please let it be as it is  -->
+<img src="clearspace.gif" width=160 height=3 border=0>
+<!-- End of Spacer text -->
+
+<!-- Begin Menu Table -->
+
+<div id="buttonbg"><a href="#" onmouseover="changeout('linkpage4'); changeout('linkpage3'); changeout('linkpage2'); changeout('linkpage1'); return true;"><img src="hideit.gif" width="135" height="25" border="0"></a></div>
+
+
+<DIV ID="lists1">
+<table border=0 cellpadding=0 cellspacing=0 width=135 bgcolor=#800080><tr><td>
+<table border=0 cellpadding=1 cellspacing=1 width=135><tr><td bgcolor=#fef2ff align=center>
+<A HREF="javascript:nothing()" onmouseover="changein('linkpage1'); changeout('linkpage2'); changeout('linkpage3'); changeout('linkpage4');return true;" onmouseout="return true;">Check out<br>these freebies.</A></td></tr></table></td></tr></table></div>
+<DIV ID="linkpage1">
+<table border=0 cellpadding=0 cellspacing=0 width=135 bgcolor=#8000ff><tr><td>
+<table border=0 cellpadding=1 cellspacing=1 width=135><tr><td bgcolor=#e1e1ff align=center>
+<A HREF="javascript:nothing()" >Dummy Link</A></td></tr>
+<tr><td bgcolor=#e1e1ff align=center>
+<A HREF="javascript:nothing()">Dummy Link</A></td></tr>
+<tr><td bgcolor=#e1e1ff align=center>
+<A HREF="javascript:nothing()">Dummy Link</A></td></tr>
+<tr><td bgcolor=#e1e1ff align=center>
+<A HREF="javascript:nothing()">Dummy Link</A></td></tr>
+</table></td></tr></table></div>
+<DIV ID="lists2">
+<table border=0 cellpadding=0 cellspacing=0 width=135 bgcolor=#800080><tr><td>
+<table border=0 cellpadding=1 cellspacing=1 width=135><tr><td bgcolor=#fef2ff align=center>
+<A HREF="javascript:nothing()" onmouseover="changein('linkpage2'); changeout('linkpage1'); changeout('linkpage3'); changeout('linkpage4'); return true;" onmouseout="return true;">About DHTML<br>& Javascript</A></td></tr></table></td></tr></table></div>
+<DIV ID="linkpage2">
+<table border=0 cellpadding=0 cellspacing=0 width=135 bgcolor=#8000ff><tr><td>
+<table border=0 cellpadding=1 cellspacing=1 width=135><tr><td bgcolor=#e1e1ff align=center>
+<A HREF="javascript:nothing()">Dummy Link</A></td></tr>
+<tr><td bgcolor=#e1e1ff align=center>
+<A HREF="javascript:nothing()">Dummy Link</A></td></tr></table></td></tr></table></div>
+<DIV ID="lists3">
+<table border=0 cellpadding=0 cellspacing=0 width=135 bgcolor=#800080><tr><td>
+<table border=0 cellpadding=1 cellspacing=1 width=135><tr><td bgcolor=#fef2ff align=center>
+<A HREF="javascript:nothing()" onmouseover="changein('linkpage3'); changeout('linkpage2'); changeout('linkpage1'); changeout('linkpage4');return true;" onmouseout=" return true;">Need Help?<br>Contacting me!</A></td></tr></table></td></tr></table></div>
+<DIV ID="linkpage3">
+<table border=0 cellpadding=0 cellspacing=0 width=135 bgcolor=#8000ff><tr><td>
+<table border=0 cellpadding=1 cellspacing=1 width=135><tr><td bgcolor=#e1e1ff align=center>
+<A HREF="../contact.html" target="main">Contact Me</A></td></tr>
+<tr><td bgcolor=#e1e1ff align=center>
+<A HREF="http://www.TheGuestBook.com/egbook/37950.gbook" target="newwindow">Guest Book</A></td></tr></table></td></tr></table></div>
+<DIV ID="lists4">
+<table border=0 cellpadding=0 cellspacing=0 width=135 bgcolor=#800080><tr><td>
+<table border=0 cellpadding=1 cellspacing=1 width=135><tr><td bgcolor=#fef2ff align=center>
+<A HREF="javascript:nothing()" onmouseover="changein('linkpage4'); changeout('linkpage2'); changeout('linkpage3'); changeout('linkpage1');return true;" onmouseout=" return true;">Other Services<br>for you!</A></td></tr></table></td></tr></table></div>
+<DIV ID="linkpage4">
+<table border=0 cellpadding=0 cellspacing=0 width=135 bgcolor=#8000ff><tr><td>
+<table border=0 cellpadding=1 cellspacing=1 width=135><tr><td bgcolor=#e1e1ff align=center>
+<A HREF="menubar21.zip">Download it</A></td></tr>
+<tr><td bgcolor=#e1e1ff align=center>
+<A HREF="http://www.3rdmstudio.com/" target="_top">Paid Service</A></td></tr></table></td></tr></table></div>
+
+
+
+<!-- End of Menu table -->
+</td><td WIDTH=100%>
+<TABLE WIDTH=100% BORDER=0 cellpadding=20><TR><TD>
+<CENTER><FONT COLOR=#004000 face="tahoma,verdana" size=3><b><u>Explanation</u></b></FONT><br><br>
+
+<FONT face="tahoma,verdana" size=2><b>(This Script is Netscape6 Compliant)<br>
+Updated - December, 2000.</b></font></CENTER>
+<br>
+<br>
+<div align="justify">
+<FONT face="tahoma,verdana" size=2>
+
+<b>Preamble:</b><br>Lot of people have asked me if a Timer function can be added - so that the Sub-Menus automatically hide themselves, if & when not being used. Sure it can be done. But, not for Free - sorry about that. If you are really serious, check out my terms for Custom Scripts/Web Designing under &quot;OTHER SERVICES&quot; section.<br>
+<br>
+
+In the true sense of JavaScript/DHTML Code writing, I must tell you this isn't quite the &quot;<B>hierarchical</B>&quot; menu you may have seen elsewhere (see my &quot;comment&quot; above).  On the other hand, one can still argue in favour! It has it's advantages. To start with, for a person who isn't very conversant with JavaScript/DHTML - this Script would be easy to modify, while giving it a similar (hierarchical) look. The other major advantage is, I have written/designed it in such a way that, a visitor with an older than 4th Generation browser, will not go back un-satisfied. Neither do you have to create another Menubar for them. All that'll happen is, the "pop-ups" won't work. All links will be visible by default.<p>
+There are basically, two parts to this script.
+<ol>
+<li>The First part is the JavaScript portion. This essentially contains two functions which I have named &quot;<B>changein</B>&quot; and  &quot;<B>changeout</B>&quot;. Of these two, CHANGEOUT <B>hides</B> a division and CHANGEIN <B>shows</B> it.<br>In the Script section, you'll also find a third function called &quot;<B>nothing</B>&quot;. In fact, as the name implies, it really doesn't do anything. As you'll see, I have used this for the MAIN HEAD &quot;<B>&lt;</B>a href=.....<B>&gt;</B>&quot; tags. Therefore, even if anyone <B>clicks</B> these MAIN links, nothing will happen! 
+<li>Next step was to create the Style Sheets for each division. In this example, I have 4 MAIN HEADs & 4 SUB-MENUs. These Sub-Menus, as you see, are &quot;HIDDEN&quot; by default. In the Style specification, I have named the Main Heads as List1, List2 & so on, while the Sub-Menus are called Linkpage1, Linkpage2 etc. ( I should clarify, what you name them is NOT important. Call them &quot;TOM&quot; and &QUOT;JERRY&quot;, for all I care!! Also, if you need to add more Heads & Sub-Menus, be my Guest!!)<br>
+The all important part is to &quot;<B>position</B> each of the Divisions, correctly. Each &quot;TABLE&quot; containing the Main Headings are positioned at same left margin (In this case, <B>position:absolute; left:10;</B>) but vertical position starts from top 120, increasing next one by 35 (that is, 155, 190 & 225 respectively). To give the Sub-Menus a &quot;hierarchical&quot; appearance, while I have positioned the corresponding sub-menus at identical TOP positions, the left margin is fixed at <B>left:130;</B> so they overlap slightly - given that I have set the MAIN HEAD table widths to 135 pixels.<br>
+Here again, where you position them, is a decision you have to take. I just thought, this would look &quot;<B><I>Cool!</I></B>.
+</ol>
+
+A few more points to remember - 
+<ul>
+<li>So that the Sub-Menus appear over the Main Heads, these should have a higher &quot;z-index&quot; number than the Main Heads.
+<li>You MUST specify the &quot;<B>font-size</B>&quot; of the &quot;<B>a</B>&quot; tag, in pixels,  within the Style tags - otherwise these will change according to the Viewers Screen resolution/font size settings. In this example, I have set them to &quot;<B>font-size:12px</B>
+</ul><p>
+</FONT></div>
+
+</TD></TR></TABLE>
+<CENTER><FONT COLOR=#800000  face="tahoma,verdana" size=2>Uploaded on 02 September 1999</FONT>&nbsp;&nbsp;&nbsp;&nbsp;<B>||</B>&nbsp;&nbsp;&nbsp;&nbsp;<FONT COLOR=#800000  face="tahoma,verdana" size=2>DBS 1998-2000. All Rights Reserved.</FONT></center>
+<p>
+</td></tr></table>
+
+</body>
+</html>
